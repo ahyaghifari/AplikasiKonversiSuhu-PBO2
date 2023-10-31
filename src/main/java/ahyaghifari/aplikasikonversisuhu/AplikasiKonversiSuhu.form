@@ -115,7 +115,7 @@
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Component id="cbInputKonversiSuhu" min="-2" pref="130" max="-2" attributes="0"/>
+                  <Component id="cbKonversiDari" min="-2" pref="130" max="-2" attributes="0"/>
                   <EmptySpace pref="14" max="32767" attributes="0"/>
               </Group>
           </Group>
@@ -126,7 +126,7 @@
                   <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="cbInputKonversiSuhu" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="cbKonversiDari" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace pref="17" max="32767" attributes="0"/>
               </Group>
@@ -142,7 +142,7 @@
             <Property name="text" type="java.lang.String" value="Konversi dari : "/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JComboBox" name="cbInputKonversiSuhu">
+        <Component class="javax.swing.JComboBox" name="cbKonversiDari">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="13" style="0"/>
@@ -176,7 +176,7 @@
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Component id="cbOutputKonversiSuhu" min="-2" pref="149" max="-2" attributes="0"/>
+                  <Component id="cbKonversiKe" min="-2" pref="149" max="-2" attributes="0"/>
                   <EmptySpace pref="16" max="32767" attributes="0"/>
               </Group>
           </Group>
@@ -187,7 +187,7 @@
                   <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="cbOutputKonversiSuhu" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="cbKonversiKe" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
               </Group>
@@ -203,7 +203,7 @@
             <Property name="text" type="java.lang.String" value="Ke : "/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JComboBox" name="cbOutputKonversiSuhu">
+        <Component class="javax.swing.JComboBox" name="cbKonversiKe">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="14" style="0"/>

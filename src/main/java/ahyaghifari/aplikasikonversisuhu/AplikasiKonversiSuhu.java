@@ -78,10 +78,10 @@ public class AplikasiKonversiSuhu extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
-        cbInputKonversiSuhu = new javax.swing.JComboBox<>();
+        cbKonversiDari = new javax.swing.JComboBox<>();
         jPanel2 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
-        cbOutputKonversiSuhu = new javax.swing.JComboBox<>();
+        cbKonversiKe = new javax.swing.JComboBox<>();
         jLabel4 = new javax.swing.JLabel();
         tfInputSuhu = new javax.swing.JTextField();
         jPanel3 = new javax.swing.JPanel();
@@ -107,8 +107,8 @@ public class AplikasiKonversiSuhu extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
         jLabel2.setText("Konversi dari : ");
 
-        cbInputKonversiSuhu.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
-        cbInputKonversiSuhu.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Celsius", "Fahrenheit", "Kelvin", "Reamur" }));
+        cbKonversiDari.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
+        cbKonversiDari.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Celsius", "Fahrenheit", "Kelvin", "Reamur" }));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -118,7 +118,7 @@ public class AplikasiKonversiSuhu extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(cbInputKonversiSuhu, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(cbKonversiDari, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(14, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -127,7 +127,7 @@ public class AplikasiKonversiSuhu extends javax.swing.JFrame {
                 .addGap(12, 12, 12)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
-                    .addComponent(cbInputKonversiSuhu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(cbKonversiDari, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(17, Short.MAX_VALUE))
         );
 
@@ -136,9 +136,9 @@ public class AplikasiKonversiSuhu extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel3.setText("Ke : ");
 
-        cbOutputKonversiSuhu.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        cbOutputKonversiSuhu.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Celsius", "Fahrenheit", "Kelvin", "Reamur" }));
-        cbOutputKonversiSuhu.setSelectedIndex(1);
+        cbKonversiKe.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        cbKonversiKe.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Celsius", "Fahrenheit", "Kelvin", "Reamur" }));
+        cbKonversiKe.setSelectedIndex(1);
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -148,7 +148,7 @@ public class AplikasiKonversiSuhu extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabel3)
                 .addGap(18, 18, 18)
-                .addComponent(cbOutputKonversiSuhu, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(cbKonversiKe, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(16, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
@@ -157,7 +157,7 @@ public class AplikasiKonversiSuhu extends javax.swing.JFrame {
                 .addGap(9, 9, 9)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
-                    .addComponent(cbOutputKonversiSuhu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(cbKonversiKe, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
@@ -298,8 +298,8 @@ public class AplikasiKonversiSuhu extends javax.swing.JFrame {
     private void btnConvertActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConvertActionPerformed
         // ambil nilai nilai komponen input suhu, konversi dari dan tujuan konversi
         double inputSuhu = Double.parseDouble(tfInputSuhu.getText());
-        String konversiDari = cbInputKonversiSuhu.getSelectedItem().toString();
-        String konversiKe = cbOutputKonversiSuhu.getSelectedItem().toString();
+        String konversiDari = cbKonversiDari.getSelectedItem().toString();
+        String konversiKe = cbKonversiKe.getSelectedItem().toString();
         
         // pengondisian konversi
         if(konversiDari == konversiKe){
@@ -316,8 +316,8 @@ public class AplikasiKonversiSuhu extends javax.swing.JFrame {
     private void btnResetMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnResetMouseClicked
         // mengembalikan semua nilai komponen yang diperlukan untuk kembali ke keadaan semula       
        tfInputSuhu.setText(null);
-       cbInputKonversiSuhu.setSelectedIndex(0);
-       cbOutputKonversiSuhu.setSelectedIndex(1);
+       cbKonversiDari.setSelectedIndex(0);
+       cbKonversiKe.setSelectedIndex(1);
        lblHasilInputSuhu.setText("0 Celsius");
        lblHasilOutputSuhu.setText("32 Fahrenheit");
        tfInputSuhu.requestFocus();
@@ -366,8 +366,8 @@ public class AplikasiKonversiSuhu extends javax.swing.JFrame {
     private javax.swing.JButton btnConvert;
     private javax.swing.JButton btnKeluar;
     private javax.swing.JButton btnReset;
-    private javax.swing.JComboBox<String> cbInputKonversiSuhu;
-    private javax.swing.JComboBox<String> cbOutputKonversiSuhu;
+    private javax.swing.JComboBox<String> cbKonversiDari;
+    private javax.swing.JComboBox<String> cbKonversiKe;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
