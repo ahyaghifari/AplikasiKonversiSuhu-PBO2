@@ -324,7 +324,10 @@ public class AplikasiKonversiSuhu extends javax.swing.JFrame {
     }//GEN-LAST:event_btnResetMouseClicked
 
     private void btnKeluarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnKeluarMouseClicked
-        System.exit(0);
+        int konfirmasi = JOptionPane.showConfirmDialog(this, "Yakin ingin menutup aplikasi", "Konfirmasi", JOptionPane.YES_NO_OPTION);
+        if(konfirmasi == 0){
+            System.exit(0);
+        }
     }//GEN-LAST:event_btnKeluarMouseClicked
 
     /**
